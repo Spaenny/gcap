@@ -13,3 +13,6 @@ CAP.message = "An admin has captured you're screen! Hang on, baby!"
 CAP.command = "cap" 
 -- The command someone would do to capture a screen. (Would require allowance!)
 -- No need to do "!"" or "/"" in front, already got that handled!
+
+CAP.defaultquality = 70
+-- If you do !cap <player> without the third argument which is the quality, the size specified here will be default.

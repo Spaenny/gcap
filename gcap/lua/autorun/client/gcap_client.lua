@@ -25,10 +25,10 @@ function CAP.ViewScreen(data, caller, victim)
 	html:Dock( FILL )
 end
 
-function CAP.CaptureScreen(qual)
+function CAP.CaptureScreen(quality)
 	local CapData = render.Capture({
 		format = "jpeg",
-		quality = qual or 70,
+		quality = tonumber(quality) or 70,
 		x = 0,
 		y = 0,
 		w = ScrW(),
@@ -39,7 +39,7 @@ function CAP.CaptureScreen(qual)
 end
 
 net.Receive("CAP.SendVictim", function(len, ply)
-	CAP.Product = CAP.CaptureScreen(CAP.CaptureQuality)
+	CAP.Product = CAP.CaptureScreen(net.ReadString())
 	net.Start("CAP.SendCaller")
 	net.SendToServer()
 end)
