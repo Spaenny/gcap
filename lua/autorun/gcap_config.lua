@@ -1,5 +1,3 @@
-// By Author
- 
 CAP = {}
  
 CAP.allowance = {
@@ -7,7 +5,7 @@ CAP.allowance = {
 }
 -- Groups whom are allowed to do this.
  
-CAP.message = "An admin has captured your screen! Hang on, baby!"
+CAP.message = "Your screen is being captured!"
 -- The message someone recieves when being taken a picture of. Put "" to disable the message.
  
 CAP.command = "cap"
