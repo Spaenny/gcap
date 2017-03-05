@@ -1,7 +1,12 @@
-gcap
-====
+# GCAP
 
-wondering if someone is watching porn in the overlay? then this is the perfect tool for you!
+## Information
 
-drag the folder gcap from gcap-master into your addons folder and your ready to go
-no known bugs yet, pls tell me if you find any and ill fix them :D
+This tool, makes a screenshot of the clients screen and sends it to you. Keep in mind that this does also capture the steam overlay!
+
+## Usage
+The Default command is !cap USER or /cap USER
+
+## Config
+You can change the config in gcap/gcap_config.lua
+Please read the comments to understand the settings.
